@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cat-list-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.cat-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: repeat(2, 200px); */
+  grid-auto-rows: 200px;
+  gap: 20px;
+}
+
+.cat-grid-img-only {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  border: solid 1px black;
+}
+
+.cat-grid-cell {
+  border: solid 1px black;
+  text-align: center;
+}
+
+.cat-grid-img-btn {
+  width: 100%;
+  height: 85%;
+  object-fit: scale-down;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content img {
+  max-block-size: 80%;
+  max-inline-size: 80%;
+}
+
+.cat-breed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cat-breed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.cat-breed-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.cat-breed-img {
+  width: 100%;
+  height: 300px; 
+  object-fit: scale-down;
+  border: 1px solid rgb(155, 150, 150);
+  border-radius: 5px;
+}
